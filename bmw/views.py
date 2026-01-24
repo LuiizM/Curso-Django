@@ -1,10 +1,9 @@
-from django.shortcuts import render
 from django.http import HttpResponse
-
+from django.shortcuts import render # Ele le o arquivo e renderiza ele 
 
 # Create your views here.
 def home(request):
-    return HttpResponse('Home1')
+    return render(request, 'bmw/home.html')
 
 def sobre(request):
     return HttpResponse('SOBRE')

@@ -3,7 +3,9 @@ from django.shortcuts import render # Ele le o arquivo e renderiza ele
 
 # Create your views here.
 def home(request):
-    return render(request, 'bmw/home.html')
+    return render(request, 'bmw\home.html', context={
+        "name": "Luiz Octavio"
+    })
 
 def sobre(request):
     return HttpResponse('SOBRE')

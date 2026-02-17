@@ -1,7 +1,6 @@
 from django.urls import path
-from bmw.views import home, sobre, contato
+from bmw.views import home
 
 urlpatterns = [
     path('', home),
-    
 ]
